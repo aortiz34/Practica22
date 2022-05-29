@@ -1,0 +1,31 @@
+body {
+    background-color:bisque;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 0 1em 0;
+  caption-side: top;
+}
+caption, td, th {
+  padding: 0.3em;
+}
+th, td {
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+}
+th:lastchild, td:lastchild {
+   border-right: 0;
+}
+th {
+  width: 25%;
+}
+
+a:hover{
+
+  color: brown;
+}
+

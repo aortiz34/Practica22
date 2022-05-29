@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="assets/style.css" type="text/css" rel="stylesheet">
+    <title>Tabla de personas</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>SSN</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Tipo de Sangre</th>
+            <th>Acción Eliminar</th>
+            <th>Acción Actualiizar</th>
+        </tr>
+        <% persons.forEach(function(person) { %>
+        <tr>
+            <td> <%= person.nss %> </td>
+            <td> <%= person.nombre %> </td>
+            <td> <%= person.apellido %> </td>
+            <td> <%= person.edad %> </td>
+            <td> <%= person.tipoSangre %> </td>
+            <td><a href="<%= `deletePerson/${person._id}`%>">Eliminar</a></td>
+            <td><a href="<%= `findById/${person._id}`%>">Actualiizar info</a></td>
+        </tr> 
+        <% }); %>
+    </table>
+         
+        <a href="inicio">Volver al inicio</a>
+        
+    </body>
+    </html>
