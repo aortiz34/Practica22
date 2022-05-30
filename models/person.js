@@ -11,4 +11,4 @@ let personSchema = new mongoose.Schema({
 });
 
 //el esquema anteriormente creado se exporta
-module.exports = mongoose.model("Persons", personSchema);
+module.exports = mongoose.model("Persons", personSchema); 
